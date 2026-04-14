@@ -1,8 +1,8 @@
 # Sorting-Algorithm-Visualizer
 
-###Name: Rahul Murgai
+##Name: Rahul Murgai
 
-###Project title: Sorting Algorithm Visualizer
+##Project title: Sorting Algorithm Visualizer
 
 
 Why is this a Java 2 Project?
