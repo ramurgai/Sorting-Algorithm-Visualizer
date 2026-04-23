@@ -43,6 +43,7 @@ public class SortingVisualizer extends JPanel {
                     case "Introvert" -> introvertSort(this.nums);
                     case "Midlife Crisis" -> midlifeCrisisSort(this.nums);
                     case "Bureaucracy" -> bureaucracySort(this.nums);
+                    case "ZingZingZingbah" -> zingZingZingbahSort(this.nums);
                 }
                 currentSortName += " (Finished)";
                 repaint();
@@ -225,6 +226,12 @@ public class SortingVisualizer extends JPanel {
             }
         }
     }
+    public void zingZingZingbahSort(int[] list) {
+        Arrays.sort(list); // Instantly sorts
+        this.nums = Arrays.copyOf(list, list.length);
+        currentSortName = "ZingZingZingbah (Instant)";
+        repaint(); // Update screen once
+    }
     
 
 
@@ -272,7 +279,7 @@ public class SortingVisualizer extends JPanel {
         
         // Control Panel
         JPanel controls = new JPanel();
-        String[] options = {"Sisyphus", "Capitalism", "Communism", "Assassin", "Introvert", "Midlife Crisis", "Bureaucracy", "Phil Collins"};
+        String[] options = {"Sisyphus", "Capitalism", "Communism", "Assassin", "Introvert", "Midlife Crisis", "Bureaucracy", "Phil Collins", "ZingZingZingbah"};
         JComboBox<String> menu = new JComboBox<>(options);
         JButton runBtn = new JButton("Run Sort");
         
