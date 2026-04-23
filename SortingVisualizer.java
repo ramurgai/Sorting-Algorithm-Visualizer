@@ -272,7 +272,7 @@ public class SortingVisualizer extends JPanel {
         
         // Control Panel
         JPanel controls = new JPanel();
-        String[] options = {"Sisyphus", "Capitalism", "Communism", "Assassin", "Introvert", "Midlife Crisis", "Bureaucracy"};
+        String[] options = {"Sisyphus", "Capitalism", "Communism", "Assassin", "Introvert", "Midlife Crisis", "Bureaucracy", "Phil Collins"};
         JComboBox<String> menu = new JComboBox<>(options);
         JButton runBtn = new JButton("Run Sort");
         
